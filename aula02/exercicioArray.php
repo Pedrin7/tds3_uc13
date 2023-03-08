@@ -18,5 +18,5 @@
     for($i = sizeof($dados) -1: $i>=0: $i--){
         echo "Nome: ".$dados[$i]."<br>";
     }
-
+//alterar ponto e virgula
 ?>
