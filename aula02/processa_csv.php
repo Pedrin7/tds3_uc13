@@ -5,11 +5,11 @@
 
     $lines = explode("\n", $csv_data);
     for($i=0; $i<count($lines) ;$i++){
-        $data = explode("\n", $lines);
-        echo " Nome: ".$data[2];
-        echo " Email: ".$data[3];
-        echo " Data: ".$data[1];
-        echo " Total de vendas:".$data[0];
+        $data = explode(",", $lines[$i]);
+        echo " Nome: ".$data[2]. "<br>";
+        echo " Email: ".$data[3]. "<br>";
+        echo " Data: ".$data[1]. "<br>";
+        echo " Total de vendas:".$data[0]. "<br>";
         echo "<br>---------------------------<br>";
     }
 
