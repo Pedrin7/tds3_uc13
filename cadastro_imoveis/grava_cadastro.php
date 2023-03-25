@@ -9,13 +9,6 @@
     $diversos = $_POST["diversos"];
     $fotos = $_POST["fotos"];
 
-    if($fotos != ""){
-        pathinfo($fotos["fotos"]);
-    }
-    else{
-        echo "Arquivo não permitido";
-    }
-
     $texto_cadastro = $nome. " , " .$endereco. " , " .$telefone. " , " .$cidade. " , " .$estado. " , " .$tipo. " , " .$diversos. "\n";
 
     $grava_banco = fopen("banco.csv", "a");
