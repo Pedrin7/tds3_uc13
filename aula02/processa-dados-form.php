@@ -1,15 +1,11 @@
 <?php
-    /*
-    echo "<pre>";
-    print_r($_GET);
-    echo "</pre>";
-    */
-
-    /*
-    $nome = $_GET['nome'];
+    
+  
+    
+    $nome = $_POST['nome'];
 
     echo "Meu nome é: ".$nome;
-    */
+
 
 
 ?>

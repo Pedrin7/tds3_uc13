@@ -1,15 +1,20 @@
 <?php
 
-    $texto = $_POST ["texto"]. ".txt";
+    $nome = $_POST["nome_projeto"];
+    $endereco = $_POST["endereco"];
+    $telefone = $_POST["telefone"];
+    $cidade = $_POST["cidade"];
+    $estado = $_POST["estado"];
+    $tipo = $_POST["tipo"];
+    $diversos = $_POST["diversos"];
+    $fotos = $_POST["fotos"];
 
-    if(file_exists("banco.csv") == false){
-    $arquivo = fopen("banco.csv","a");
-    fwrite("banco.csv",$texto);
-    echo "Arquivo gerado com sucesso";
-    fclose($arquivo);
-    }
-    else{
-        echo "Erro: Arquivo já existe, não foi possivel gravar";
-    }
+    $texto_cadastro = $nome. " , " .$endereco. " , " .$telefone. " , " .$cidade. " , " .$estado. " , " .$tipo. " , " .$diversos. "\n";
+
+    $grava_banco = fopen("banco.csv", "a");
+    fwrite($grava_banco , $texto_cadastro);
+    fclose($grava_banco);
+
 
 ?>
+

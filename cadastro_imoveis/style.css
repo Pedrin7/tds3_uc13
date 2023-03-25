@@ -1,0 +1,39 @@
+button{
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+body{
+    text-align: center;
+}
+
+select{
+    width: 150px;
+}
+
+.div_form{
+    border: solid;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.ft{
+    width: 100px;
+    background-color:blue;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border: solid;
+    border-radius: 20px;
+}
