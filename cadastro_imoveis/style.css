@@ -1,16 +1,9 @@
-#botao_cadastro {
-    color: white;
-    background-color: blue;
-    text-align: center;
-}
-
 body {
     text-align: center;
 }
 
 select {
     width: 160px;
-    background-color: grey;
 }
 
 .div_form {
@@ -28,15 +21,23 @@ input[type="file"] {
 
 
 .ft{
-    width: 100px;
-    background-color:black;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
     display: inline-block;
-    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
-    border: solid;
-    border-radius: 20px;
+    margin-top: 1rem;
 }
 
+#botao_cadastro {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    width: 120px;
+}
