@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Cadastra Imoveis</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <h2>CADASTRO DE IMOVEIS</h2>
     <br>
-    <form name="cadastro_dados" action="grava_cadastro.php" method="POST">
+    <form name="cadastro_dados" action="grava_cadastro.php" method="POST" enctype="multipart/form-data">
         <div class="div_form">
             Nome do projeto <input type="text" name="nome_projeto"><br>
             <br>
@@ -39,11 +41,12 @@
             <input type="checkbox" name="diversos" value="Portaria">
             <label for="Portaria">Portaria</label><br>
             <br>
-            <label for="fotos" class="ft" >Enviar foto</label>
+            <label for="fotos" class="ft">Enviar foto</label>
             <input type="file" name="fotos" accept="image/png , image/jpeg" id="fotos"><br>
             <br>
-            <button value="cadastro" type="submit">CADASTRAR</button>
+            <button value="cadastro" type="submit" id="botao_cadastro">CADASTRAR</button>
         </div>
     </form>
 </body>
+
 </html>

@@ -1,18 +1,19 @@
-button{
+#botao_cadastro {
     color: white;
     background-color: blue;
     text-align: center;
 }
 
-body{
+body {
     text-align: center;
 }
 
-select{
-    width: 150px;
+select {
+    width: 160px;
+    background-color: grey;
 }
 
-.div_form{
+.div_form {
     border: solid;
     width: 40%;
     text-align: center;
@@ -21,13 +22,14 @@ select{
     padding-bottom: 15px;
 }
 
-input[type="file"]{
+input[type="file"] {
     display: none;
 }
 
+
 .ft{
     width: 100px;
-    background-color:blue;
+    background-color:black;
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -37,3 +39,4 @@ input[type="file"]{
     border: solid;
     border-radius: 20px;
 }
+

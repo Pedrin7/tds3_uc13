@@ -6,24 +6,24 @@
 
 4. O arquivo CSV irá simular um banco de dados. (CHECK)
 
-5. A solução deve somente gravar novos registros no arquivo CSV.
+5. A solução deve somente gravar novos registros no arquivo CSV. (CHECK)
 
 6. Não é necessário fazer edição e deleção de registros. (CHECK)
 
 7. Cada registro novo será uma linha no arquivo CSV. (CHECK)
 
 8. Todos os protótipos devem implementar a funcionalidade de upload de um 
-arquivo e gravar esse arquivo no servidor.
+arquivo e gravar esse arquivo no servidor. (CHECK)
 
 9. O arquivo de upload deve ser enviado para uma pasta específica do
-servidor.
+servidor. (CHECK)
 
 10. No arquivo CSV, deve conter uma referência do caminho do arquivo na
-pasta.
+pasta. (CHECK)
 
 11. Deve ser feito as validações de campos de preenchimento. Por exemplo:
-não aceitar campos vazios ou com espaços em branco.
+não aceitar campos vazios ou com espaços em branco. 
 
 12. O upload deve validar os formatos de arquivos: Se a solução envolve fotos,
 somente aceitar arquivos de imagens válidos. Se for de documentos,
-somente aceitar: pdf, doc, docx, odf
+somente aceitar: pdf, doc, docx, odf (CHECK)
