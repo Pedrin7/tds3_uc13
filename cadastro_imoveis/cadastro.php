@@ -32,6 +32,7 @@
             <input type="radio" name="tipo" value="Terreno" id="terreno1">
             <label for="Terreno">Terreno</label><br>
             <br>
+            <!-- fazer o checkbox usando array, usando cada name como um valor de um array -->
             Diversos <input type="checkbox" name="diversos" value="Estacionamento">
             <label for="Estacionamento">Estacionamento</label>
             <input type="checkbox" name="diversos" value="Patio">
