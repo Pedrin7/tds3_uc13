@@ -22,5 +22,5 @@
     echo "<br>";
     echo "O carro 2 tem a cor: ". $c2 -> cor;
 
-
+    /* CONTRUTORES, CLASSES... */
 ?>
