@@ -16,6 +16,9 @@
     else{
         echo "Não foi possivel fazer o upload!!!";
     }
+
+
+    
     
     $texto_cadastro = $nome. " , " .$endereco. " , " .$telefone. " , " .$cidade. " , " .$estado. " , " .$tipo. " , " .$diversos. " , ". $caminho_foto."\n";
     
