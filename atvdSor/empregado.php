@@ -28,7 +28,7 @@
             $db = new Database();
             $con = $db->connect();
 
-            $sql = "SELECT * FROM empregado";
+            $sql = "SELECT * FROM empregado limit 100";
             $rs = $con->query($sql);
 
             $status = $rs->execute();
