@@ -45,6 +45,17 @@ class Usuario
             return false;
         }
     }
+
+    public function cadastrar($login,$hash_senha){
+
+        $database = new Database();
+        $con = $database->connect();
+
+        $sql = "INSERT into usuario (login, senha) values ()";
+
+    }
+
+    
 }
 
 ?>

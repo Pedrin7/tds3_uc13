@@ -6,6 +6,6 @@
 			Usuario <input type="text" name="login"/> <br>
 			Senha <input type="password" name="senha"/> <br>
 			<input type="submit" value="Logar"/> <br>
-	        </form>
+	    </form>
 </body>
 </html>
