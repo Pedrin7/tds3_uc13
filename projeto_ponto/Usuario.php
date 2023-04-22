@@ -46,12 +46,16 @@ class Usuario
         }
     }
 
-    public function cadastrar($login,$hash_senha){
+    public function cadastrar($login,$senha){
 
         $database = new Database();
         $con = $database->connect();
 
-        $sql = "INSERT into usuario (login, senha) values ()";
+        $sql = "INSERT into usuario (login, senha) VALUES ('$login','$senha') ";
+
+        $st = $con->prepare($sql);
+        $retorno = $st->execute();
+        $dados = $st->fetchAll();
 
     }
 

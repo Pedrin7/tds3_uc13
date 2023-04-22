@@ -11,5 +11,5 @@
     echo "<br>";
     echo "SENHA COM HASH SHA1: ".$password_hash2;
     echo "<br>";
-    echo "SENHA COM HASH SHA1: ".$password_hash3;
+    echo "SENHA COM HASH SHA3: ".$password_hash3;
 ?>
