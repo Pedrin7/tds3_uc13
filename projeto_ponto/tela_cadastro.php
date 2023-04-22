@@ -1,5 +1,5 @@
 <html>
-	<head><title>Login</title></head>	
+	<head><title>CADASTRO</title></head>	
 	<body>
 		<h3>SOU A TELA DE CADASTRAR USUARIO</h3>
 		<form action="processa_cadastro.php" method="POST">
