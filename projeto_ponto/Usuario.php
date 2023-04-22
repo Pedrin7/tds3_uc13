@@ -59,6 +59,21 @@ class Usuario
 
     }
 
+    public function consultar($login,$senha){
+
+        $database = new Database();
+        $con = $database->connet();
+
+        $sql = "SELECT * FROM usuario";
+
+        $st = $con->prepare($sql);
+        $retorno = $st->execute();
+        $dados = $st->fetchAll();
+
+        //rever amanha essa função
+
+    }
+
     
 }
 

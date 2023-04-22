@@ -11,6 +11,8 @@
 
         $usuario = new Usuario();
         $status = $usuario->cadastrar($login, $senha_hash);
+
+        header("location: principal.php");
     }
     else{
         echo "As senhas não são iguais, por favor, insira senhas iguais";
