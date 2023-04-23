@@ -62,7 +62,7 @@ class Usuario
     public function consultar($login,$senha){
 
         $database = new Database();
-        $con = $database->connet();
+        $con = $database->connect();
 
         $sql = "SELECT * FROM usuario";
 
