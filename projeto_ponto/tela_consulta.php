@@ -4,8 +4,9 @@
     </head>
     <body>
         <h3>SOU A TELA DE CONSULTAR USUARIO USUARIO</h3>
-        Consultar: 
-        
+        <table>
+            
+        </table>
     </body>
 </html>
 

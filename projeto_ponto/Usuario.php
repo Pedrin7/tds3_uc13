@@ -3,6 +3,8 @@ require_once ("database.php");
 
 class Usuario
 {
+
+    private $id;
     private $login;
     private $senha;
 
@@ -59,21 +61,19 @@ class Usuario
 
     }
 
-    public function consultar($login,$senha){
+    public function consultar(){
 
+        
         $database = new Database();
         $con = $database->connect();
 
-        $sql = "SELECT * FROM usuario";
-
+        $sql = "SELECT *  FROM usuario";
+        
         $st = $con->prepare($sql);
         $retorno = $st->execute();
         $dados = $st->fetchAll();
-
-        //rever amanha essa função
-
+        
     }
-
     
 }
 
