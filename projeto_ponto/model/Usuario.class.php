@@ -76,18 +76,20 @@ class Usuario
 
     }
 
-    public function consultar(){
+    public function consultar($pagina = null, $contador = 100){
 
-        
         $database = new Database();
         $con = $database->connect();
 
-        $sql = "SELECT *  FROM usuario";
-        
-        $st = $con->prepare($sql);
-        $retorno = $st->execute();
-        $dados = $st->fetchAll();
-        
+        $sql = "SELECT id, nome, sobrenome, email, login FROM usuario limit $contador";
+        $rs = $con->query($sql);
+
+        $status = $rs->execute();
+        $dados = $rs->fetchAll();
+
+        $database->close();
+        return $dados;
+
     }
     
 }

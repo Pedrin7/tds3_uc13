@@ -4,7 +4,7 @@
     unset($_SESSION);
     session_destroy();
 
-    header("location: login.php");
+    header("location: tela_login.php");
 
 
 

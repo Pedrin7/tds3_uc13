@@ -36,7 +36,15 @@
                     //enviar mensagem de erro,as senhas não batem
                 }
 
-            };
+            }
+            else if($acao == "consultar"){
+
+                $usuario = new Usuario();
+                $dados = $usuario->consultar();
+
+                require_once("../view/usuario/tela_consulta.php");
+
+            }
         }
 
     }

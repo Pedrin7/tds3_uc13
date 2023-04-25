@@ -10,7 +10,7 @@
 				<li>USUARIO</li>
 				<ul>
 					<li><a href="usuario/tela_cadastro.php">CADASTRAR USUARIO</a></li>
-					<li><a href="tela_consulta.php">CONSULTAR USUARIO</a></li>
+					<li><a href="../controller/usuario_controller.php?acao=consultar">CONSULTAR USUARIO</a></li>
 				</ul>
 				<a href="logout.php">SAIR</a>
 			</ul>
