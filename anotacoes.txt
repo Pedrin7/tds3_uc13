@@ -1,5 +1,0 @@
-fazer o CRUD no projeto_ponto
-
-fazer a tela do consultar usuario
-
-fazer a tela alterar usuario
