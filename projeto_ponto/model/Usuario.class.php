@@ -1,12 +1,15 @@
 <?php
-require_once ("database.php");
+require_once ("../infra/database.php");
 
 class Usuario
 {
 
-    private $id;
     private $login;
     private $senha;
+    private $nome;
+    private $sobrenome;
+    private $email;
+    
 
     public function __set($atributo, $valor)
     {
@@ -48,16 +51,28 @@ class Usuario
         }
     }
 
-    public function cadastrar($login,$senha){
+    public function cadastrar(){
 
         $database = new Database();
         $con = $database->connect();
 
-        $sql = "INSERT into usuario (login, senha) VALUES ('$login','$senha') ";
+        $sql = "INSERT into usuario (nome,sobrenome,email,login,senha) VALUES (:nome , :sobrenome, 
+        :email, :login, :senha)";
 
         $st = $con->prepare($sql);
-        $retorno = $st->execute();
-        $dados = $st->fetchAll();
+        $st->bindparam(":nome",$this->nome);
+        $st->bindparam(":sobrenome",$this->sobrenome);
+        $st->bindparam(":email",$this->email);
+        $st->bindparam(":login",$this->login);
+        $st->bindparam(":senha",$this->senha);
+        $status = $st->execute();
+
+        $idUsuario = $con-> lastInsertId();
+
+        if($status == true){
+            return true;
+
+        }
 
     }
 

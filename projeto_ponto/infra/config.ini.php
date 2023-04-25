@@ -4,7 +4,7 @@
                 "dbname" => "ponto_eletronico", 
                 "user" => "root", 
                 "password" => "",
-                "port" => 3306,
+                "port" => 3307,
                 "dbtype" => "mysql",
                 "client_name" => "Céu"
     ];
