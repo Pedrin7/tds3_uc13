@@ -13,15 +13,15 @@
                 <td>Login</td>
             </tr>
             <?php
-
-                for($i = 0; $i<=sizeof($dados); $i++){
+                for($i = 0; $i<sizeof($dados); $i++){
                     echo "<tr>";
-                    echo "<td>".$dados[$i]["id"]."</td>";
+                    echo "<td><a href=\"../controller/usuario_controller.php?acao=editar&id=".$dados[$i]["id"]."\">".$dados[$i]["id"]."</a></td>";                    
                     echo "<td>".$dados[$i]["nome"]."</td>";
                     echo "<td>".$dados[$i]["sobrenome"]."</td>";
                     echo "<td>".$dados[$i]["email"]."</td>";
                     echo "<td>".$dados[$i]["login"]."</td>";
                     echo "</tr>";
+
                 }
             ?>
         </table>

@@ -91,7 +91,46 @@ class Usuario
         return $dados;
 
     }
+
+    public function buscarPorId($id){
+
+        $database = new Database();
+        $con = $database->connect();
+
+        $sql = "SELECT id, nome, sobrenome, email, login FROM usuario WHERE id = :id";
+
+        $st = $con->prepare($sql);
+        $st->bindParam(":id", $id);
+
+        $status = $st->execute();
+        $dados = $st->fetchAll();
+
+        $database->close();
+        return $dados;
+    }
+
+    public function atualizar($id, $nome, $sobrenome, $email, $login, $senha, $confirmar_senha){
+
+        $database = new Database();
+        $con = $database->connect();
+
+        //arrumar a query
+        $sql = "UPDATE id, nome, sobrenome, email, login FROM usuario WHERE id = :id, nome = :nome, sobrenome = :sobrenome,
+        email = :email, login = :login, senha = :senha, confirmar_senha = :confirmar_senha";
+
+        $st = $con->prepare($sql);
+        $st->bindParam(":id", $id);
+        //fazer bindParam pra todos as variaveis
+
+        $status = $st->execute();
+        $dados = $st->fetchAll();
+
+        $database->close();
+        return $dados;
+    }
     
 }
 
 ?>
+
+<!--UPDATE usuario set nome = :nome, sobrenome = :sobrenome         WHERE id = :id-->
